@@ -27,7 +27,11 @@ assets/css/sopacom.css     Feuille de style unique
 assets/js/app.js           Interactions (GSAP + ScrollTrigger, défilement fluide Lenis, transitions)
 assets/js/laverie3d.js     Scène 3D partagée (thème sombre pour l'accueil, clair pour l'explorateur)
 assets/js/hero3d.js        Hero 3D de l'accueil (visite automatique des étapes)
-assets/js/explorer.js      Explorateur 3D
+assets/js/explorer.js      Ancien explorateur 3D (conservé, n'est plus chargé par fonctionnement.html)
+assets/js/fonct-scene.js   Visite virtuelle : bâtiment, équipements dimensionnés d'après les blocs DWG, flux, vues
+assets/js/fonct-actors.js  Visite virtuelle : convives, agents, plateaux, casiers, simulation d'un service
+assets/js/fonct-ui.js      Visite virtuelle : étapes, vues, simulation, panneaux, étiquettes
+assets/css/fonctionnement.css  Styles propres à la page fonctionnement (préfixe .fx)
 assets/js/v7.js            Intro, curseur, « Ma sélection » (♥), sélecteur de zones sur le rendu, rail de chapitres, bandeau
 assets/js/biblio.js        Bibliothèque technique
 assets/img/cao/            Aperçus SVG des blocs AutoCAD (accueil)
@@ -71,6 +75,16 @@ Tous ces points sont aussi signalés dans les pages par un encadré « À compl�
 - Bibliothèque technique et fiche bloc : traits des plans plus clairs et plus épais, aplats renforcés, séparations des cartes plus visibles, textes secondaires éclaircis.
 - Pages gammes : mêmes plans à contraste renforcé dans la section « Bibliothèque technique ».
 - Fonctionnement : éclairage de la scène 3D renforcé (option propre à l'explorateur), étiquettes inactives plus lisibles, étapes et textes secondaires plus contrastés.
+
+## 3 quater. Page « Comprendre le fonctionnement » (v8)
+
+- Visite virtuelle d'un réfectoire et d'une laverie mécanisée : 11 étapes, 7 vues (générale, aérienne, en coupe, immersive, technique, éclatée, flux), simulation d'un service du midi, fiches d'équipements.
+- Seule `fonctionnement.html` a été modifiée ; les autres pages, scripts et feuilles de style sont identiques à la version précédente (sauvegarde : `sauvegardes/version-7-1-avant-fonctionnement.zip`).
+- Moteur propre à la page (`fonct-*.js`, Three.js r128 et OrbitControls inchangés). `laverie3d.js` reste utilisé par l'accueil et n'a pas été modifié.
+- Les emprises en plan des équipements Sopacom (Technicord, virages, stations de tri, tables, Transroll, Technilift…) sont mesurées sur les blocs DWG. Hauteurs, matières, mobilier, personnages, machine de lavage (équipement tiers) et mezzanine sont de principe ; le tableau « Bibliothèque CAO exploitée » de la page le détaille.
+- Aucune cadence ni capacité n'est indiquée. La simulation est une démonstration pédagogique.
+- Anciens liens `#etape-1` à `#etape-5` (pages produits) : redirigés vers l'étape correspondante de la nouvelle visite. Nouveaux liens : `#etape-00` à `#etape-10`.
+- Les plans CAO posés au sol en vue technique nécessitent un affichage par http(s) (GitHub Pages) : ouverte en `file://`, la page fonctionne mais sans ces plans.
 
 ## 4. Règles de contenu appliquées
 
