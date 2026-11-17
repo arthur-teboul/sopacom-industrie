@@ -1,0 +1,20 @@
+/* SOPACOM — Accueil : teaser « Fonctionnement ». Feuille chargée uniquement par index.html ; sélecteurs préfixés .hfx. */
+.hfx-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:center}
+.hfx-copy{grid-column:1/span 5}
+.hfx-copy .h2{margin:22px 0 20px}
+.hfx-copy p{max-width:46ch}
+.hfx-fig{grid-column:7/span 6;margin:0}
+.hfx-stage{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d0e11;border:1px solid var(--line,#2c2d32)}
+.hfx-stage img,.hfx-stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
+.hfx-stage canvas{opacity:0;transition:opacity .9s ease}
+.hfx-stage.ready canvas{opacity:1}
+.hfx-stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 52%,rgba(13,14,17,0) 58%,rgba(13,14,17,.55) 100%)}
+.hfx-photo{display:none}
+.hfx-nogl .hfx-poster{display:none}
+.hfx-nogl .hfx-photo{display:block}
+.hfx-fig figcaption{margin-top:12px;font:.68rem/1.5 var(--mono,monospace);letter-spacing:.04em;color:var(--muted,#8E887D)}
+.hfx-fig figcaption b{color:var(--orange-ink,#F68E1D);font-weight:500;margin-right:8px}
+@media (max-width:1020px){
+  .hfx-copy,.hfx-fig{grid-column:1/-1}
+  .hfx-fig{margin-top:8px}
+}
