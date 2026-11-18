@@ -8,6 +8,7 @@
 .fx *{box-sizing:border-box}
 .fx button{font-family:var(--sans,Inter,system-ui,sans-serif);color:inherit}
 .fx-side{display:flex;flex-direction:column;gap:18px;padding:22px 24px 26px;overflow:auto;background:var(--fx-side);border-right:1px solid var(--fx-line);scrollbar-width:thin;scrollbar-color:#45464e transparent}
+.fx-side>*{flex-shrink:0}
 .fx-crumbs .crumbs{margin:0;color:var(--fx-mut)}
 .fx-k{display:block;font:500 .7rem var(--mono,monospace);letter-spacing:.12em;text-transform:uppercase;color:var(--fx-or)}
 .fx-title{font:400 1.75rem/1.12 var(--serif,Georgia,serif);margin:8px 0 0;color:var(--fx-ink);letter-spacing:-.01em}
