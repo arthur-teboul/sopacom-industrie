@@ -20,6 +20,16 @@
     autoTour: true, labelMinX: 0.46, viewOffset: 0.19, zoom: false, viewScale: 1.05, onStep: show,
     overview: { p: [-3.4, 11.8, 18.5], t: [3.6, 0.8, -0.4] }
   });
+  /* Un clic (ou une touche) sur la représentation ouvre la visite « Comprendre le fonctionnement » ; un glisser pivote la scène. */
+  var fb = sec.querySelector('.h3d-fallback'), dn = null;     // le calque de repli recouvre la scène : on écoute les deux
+  [stage, fb].forEach(function (el) {
+    if (!el) return; el.style.cursor = 'pointer'; el.setAttribute('data-cursor', 'Explorer');
+    el.addEventListener('pointerdown', function (e) { dn = { x: e.clientX, y: e.clientY, t: performance.now() }; });
+    el.addEventListener('pointerup', function (e) {
+      var d0 = dn; dn = null; if (!d0 || e.target.closest('button, a')) return;
+      if (Math.hypot(e.clientX - d0.x, e.clientY - d0.y) < 6 && performance.now() - d0.t < 600) location.href = 'fonctionnement.html';
+    });
+  });
   if (!api) { sec.classList.add('no-webgl'); btns.forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.step); }); }); return; }
   sec.classList.add('ready');
   btns.forEach(function (b) { b.addEventListener('click', function () { api.select(+b.dataset.step, true); }); });
