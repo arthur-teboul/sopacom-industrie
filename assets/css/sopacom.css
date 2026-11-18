@@ -1004,3 +1004,20 @@ html.sel-open .sel-drawer{transform:none;visibility:visible}
 .explorer .ex-tools button{border-color:#5a5b63;color:#ECE7DD}
 .explorer .ex-tools button[aria-pressed="true"],.explorer .ex-tools button:hover{background:#ECE7DD;color:#111;border-color:#ECE7DD}
 .explorer .ex-hint,.explorer .ex-legend{color:#DCD6CB;background:rgba(22,22,26,.92);border:1px solid #3a3b42}
+
+/* Menu : huit entrées avec « Sopacom Concept » — compactage entre 1021 et 1240 px pour éviter le retour à la ligne */
+.nav>li>a{white-space:nowrap}
+@media (min-width:1021px) and (max-width:1240px){
+  .site-header .frame{gap:14px}
+  .nav{gap:0}
+  .nav>li>a{padding:10px 8px;font-size:.84rem}
+  .nav .has-sub>a{padding-right:14px}
+  .nav .btn-contact{padding-left:12px;padding-right:12px}
+  .sel-btn{padding:0 10px}
+}
+@media (min-width:1021px) and (max-width:1100px){
+  .site-header .frame{gap:10px}
+  .nav>li>a{padding:10px 5px;font-size:.8rem}
+  .nav>li>a::after{left:5px;right:5px}
+  .brand img{width:88px;height:auto}
+}

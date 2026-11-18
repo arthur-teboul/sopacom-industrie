@@ -86,6 +86,14 @@ Tous ces points sont aussi signalés dans les pages par un encadré « À compl�
 - Anciens liens `#etape-1` à `#etape-5` (pages produits) : redirigés vers l'étape correspondante de la nouvelle visite. Nouveaux liens : `#etape-00` à `#etape-10`.
 - Les plans CAO posés au sol en vue technique nécessitent un affichage par http(s) (GitHub Pages) : ouverte en `file://`, la page fonctionne mais sans ces plans.
 
+## 3 quinquies. Sopacom Concept (Sushi Concept et Pizza Concept)
+
+- Pages `sopacom-concept.html`, `sushi-concept.html` et `pizza-concept.html`, ajoutées au menu, au pied de page, à l'accueil, au secteur « Pizza & sushi » et à l'entreprise.
+- Contenus repris des plaquettes « Le SUSHI de A à Z » et « La PIZZA de A à Z » (PDF, consultables et téléchargeables dans Documentation) et des sites sushiconcept.fr et pizzaconcept.fr. Rien n'a été ajouté.
+- Photographies recadrées à partir des plaquettes imprimées (quadrillage visible) : versions haute définition à fournir.
+- Points à trancher par Sopacom (signalés dans les pages) : nombre de réalisations Sushi (plaquette : une vingtaine ; site : une quarantaine), prix du repas cité (10 € ou 15 €), accord des clients et enseignes cités, adresse e-mail et site de la plaquette Sushi, délai de formation « 48 h » de la plaquette Pizza.
+- La dernière page de la plaquette Pizza reprend la liste de références du Sushi : elle n'est pas attribuée à Pizza Concept.
+
 ## 4. Règles de contenu appliquées
 
 - Les textes et caractéristiques proviennent uniquement des 4 PDF Sopacom et du site actuel. La source est indiquée sous chaque bloc.
